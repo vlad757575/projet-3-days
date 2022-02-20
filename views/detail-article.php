@@ -6,20 +6,20 @@
 
 <div class="row">
     <div class="col-4">
-        <img src="<?= $articles->image ?>" alt="" class="img-fluid thumbnail">
+        <img src="<?= $article->image ?>" alt="" class="img-fluid thumbnail">
     </div>
 
     <div class="col-8">
         <dl>
             <dt>Auteur</dt>
-            <dd><?= $articles->auteur ?></dd>
+            <dd><?= $article->auteur ?></dd>
             <dt>auteur</dt>
 
             <dt>Titre</dt>
-            <dd><?= $articles->titre ?> </dd>
+            <dd><?= $article->titre ?> </dd>
 
             <dt>Contenu</dt>
-            <dd><?= $articles->contenu ?></dd>
+            <dd><?= $article->contenu ?></dd>
         </dl>
     </div>
 </div>

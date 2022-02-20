@@ -13,8 +13,8 @@
                     <a class="nav-link" href="index.php?route=articles">Articles</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                    <a class="nav-link dropdown-toggle" href="index.php?route=ajouter" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ajouter un article
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Action</a></li>

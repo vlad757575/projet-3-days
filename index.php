@@ -24,15 +24,24 @@ switch ($route) {
 
     case 'articles':
         include __DIR__ . '/controllers/liste-articles-controller.php';
-
         liste();
-
         break;
 
     case 'detail-article':
         include __DIR__ . '/controllers/detail-article-controller.php';
         details();
         break;
+
+    case 'ajouter':
+        include __DIR__ . '/controllers/ajouter-controller.php';
+        ajouter();
+        break;
+
+    case 'ajouter-handler':
+        include __DIR__ . '/controllers/ajouter-controller.php';
+        ajouter_handler();
+        break;
+
 
 
     default:

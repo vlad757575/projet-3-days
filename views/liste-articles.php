@@ -4,7 +4,7 @@ include __DIR__ . '/parties/header.php';
 include __DIR__ . '/parties/nav.php';
 ?>
 
-<?php foreach ($articles as $a) { ?>
+<?php foreach ($article as $a) { ?>
     <div class="card mb-4 d-inline-flex p-2 bd-highlight mt-5" style="width: 18rem; margin:auto;">
         <img src="<?= $a->image ?>" class="card-img-top" alt="...">
         <div class="card-body">

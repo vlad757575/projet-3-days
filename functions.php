@@ -41,3 +41,8 @@ function resum($description)
     }
     return $description;
 }
+function redirection($route)
+{
+    header('Location: index.php?route=' . $route);
+    die;
+}
