@@ -1,12 +1,12 @@
 <?php
 function supprimer()
 {
-    if (empty($_POST['id'])) erreur(404);
+    if (empty($_GET['id'])) erreur(404);
 
-    require_once model('Contact');
-    $article = Article::retrieveByPK($_POST['id']); // Retrieve by ID (retrieve one)
+    require_once model('Article');
+    $article = Article::retrieveByPK($_GET['id']);
 
-    if (empty($carticle)) erreur(404);
+    if (empty($article)) erreur(404);
 
     $article->delete();
 

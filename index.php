@@ -47,6 +47,11 @@ switch ($route) {
         modifier();
         break;
 
+    case 'supprimer':
+        include __DIR__ . '/controllers/supprimer-article-controller.php';
+        supprimer();
+        break;
+
 
 
     default:
