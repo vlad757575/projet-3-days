@@ -52,7 +52,24 @@ switch ($route) {
         supprimer();
         break;
 
+    case 'connexion':
+        include __DIR__ . '/controllers/connexion-controller.php';
+        connexion();
+        break;
+    case 'connexion-handler':
+        include __DIR__ . '/controllers/connexion-controller.php';
+        connexion_handler();
+        break;
 
+    case 'deconnexion':
+        include __DIR__ . '/controllers/deconnexion-controller.php';
+        deconnexion();
+        break;
+
+    case 'creation-compte':
+        include __DIR__ . '/controllers/creation-compte-controller.php';
+        creation_compte();
+        break;
 
     default:
         die('Erreur 404');

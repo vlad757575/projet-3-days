@@ -29,6 +29,6 @@ function ajouter_handler()
 
         $article->save();
 
-        redirection('liste-articles');
+        redirection('articles');
     } else redirection('ajouter');
 };

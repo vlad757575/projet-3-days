@@ -15,7 +15,7 @@ function path(string $type, string $nom): string
 
     return __DIR__ . '/' . $type . 's/' . $nom . '.php';
 }
-function url(string $route = 'liste'): string
+function url(string $route = 'home'): string
 {
     return 'index.php?route=' . $route;
 }

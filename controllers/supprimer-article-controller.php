@@ -10,5 +10,5 @@ function supprimer()
 
     $article->delete();
 
-    redirection('liste-articles');
+    redirection('articles');
 }

@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.php?route=home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?route=articles">Articles</a>
@@ -25,8 +25,14 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
+                <?php if (empty($_SESSION['pseudo'])) { ?>
+                    <a class="nav-link" href="<?= url('connexion') ?>">Connexion</a>
+                <?php } else { ?>
+                    <a class=" nav-link" href="<?= url('deconnexion') ?>">Deconnexion</a>
+                    <span class=" ml-auto nav-item"><?= $_SESSION['pseudo'] ?></span>
+                <?php  } ?>
                 <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link" href="index.php?route=creation-compte">Créer un compte</a>
                 </li>
             </ul>
             <form class="d-flex">
