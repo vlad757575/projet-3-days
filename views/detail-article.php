@@ -22,6 +22,7 @@
             <dd><?= $article->contenu ?></dd>
         </dl>
     </div>
+    <a href="index.php?route=modifier-article&id=<?= $a->id ?>" class="btn btn-primary">modifier</a>
 </div>
 
 <?php include __DIR__ . '/parties/footer.php'; ?>

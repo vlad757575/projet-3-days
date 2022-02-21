@@ -42,6 +42,11 @@ switch ($route) {
         ajouter_handler();
         break;
 
+    case 'modifier-article':
+        include __DIR__ . '/controllers/modifier-article-controller.php';
+        modifier();
+        break;
+
 
 
     default:
