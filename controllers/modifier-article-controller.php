@@ -1,6 +1,7 @@
 <?php
 function modifier()
 {
+    if (empty($_SESSION['pseudo']) || $_SESSION['pseudo'] != 'admin') die('Vous ne pouvez pas modifier un article');
     if (empty($_GET['id'])) erreur(404);
 
     require_once model('Article');

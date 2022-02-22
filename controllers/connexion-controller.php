@@ -24,6 +24,7 @@ function connexion_handler()
 
                 $_SESSION['pseudo'] = $utilisateur->pseudo;
                 $_SESSION['id'] = $utilisateur->id;
+                $_SESSION['role'] = $utilisateur->role;
 
                 redirection('home');
             } else die('Erreur de mot de passe');

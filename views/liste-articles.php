@@ -12,8 +12,10 @@ include __DIR__ . '/parties/nav.php';
             <h4 class="card-text"><?= $a->titre ?></h4>
             <p class="card-text"><?= resum($a->contenu); ?></p>
             <a href="index.php?route=detail-article&id=<?= $a->id ?>" class="btn btn-primary">Details</a>
-            <a href="index.php?route=modifier-article&id=<?= $a->id ?>" class="btn btn-primary">Modifier</a>
-            <a href="index.php?route=supprimer&id=<?= $a->id ?>" class="btn btn-primary">Supprimer</a>
+            <?php if (!empty($_SESSION['role']) && $_SESSION['role'] === 'admin') { ?>
+                <a href="index.php?route=modifier-article&id=<?= $a->id ?>" class="btn btn-primary">Modifier</a>
+                <a href="index.php?route=supprimer&id=<?= $a->id ?>" class="btn btn-primary">Supprimer</a>
+            <?php } ?>
         </div>
     </div>
 <?php } ?>
