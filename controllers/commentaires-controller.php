@@ -1,13 +1,29 @@
-// include __DIR__ . '/../models/Commentaire.php';
-
-// function display_commentaire()
-// {
-// if (empty($_GET['id'])) die('Erreur 404');
-
-// $commentaires = Commentaire::retrieveByPK($_GET['id']);
-
-// if (empty($commentaires)) die('Erreur 404');
+<?php
+include __DIR__ . '/../models/Commentaire.php';
 
 
-// include __DIR__ . '/../views/detail-article.php';
-// };
+function commentaires()
+{
+
+    include __DIR__ . '/../views/detail-article.php';
+}
+function ajout_commentaires()
+{
+
+    if (
+
+        !empty($_POST['contenu'])
+
+    ) {
+
+
+        $commentaires = new Commentaire;
+
+
+        $commentaires->contenu = $_POST['contenu'];
+
+        $commentaires->save();
+
+        redirection('detail-article');
+    };
+};

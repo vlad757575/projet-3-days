@@ -27,6 +27,20 @@
                 <dd><?= $com->contenu ?></dd>
             <?php } ?>
         </dl>
+        <form method="post">
+            <div class="form-group row">
+                <label for="stock" class="col-sm-12 col-form-label">Votre commentaire</label>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" name="contenu" id="contenu" placeholder="contenu" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Publier votre commentaire:</button>
+                </div>
+            </div>
+        </form>
     </div>
     <a href="index.php?route=modifier-article&id=<?= $a->id ?>" class="btn btn-primary">Modifier</a>
     <a href="index.php?route=supprimer&id=<?= $a->id ?>" class="btn btn-primary">Supprimer</a>
