@@ -30,6 +30,12 @@
             <input type="password" class="form-control" name="confirmer" id="confirmer" placeholder="Confirmer votre mot de passe" required>
         </div>
     </div>
+    <div class="form-group row">
+        <label for="avatar" class="col-sm-12 col-form-label">Photo</label>
+        <div class="col-sm-12">
+            <input type="url" class="form-control" name="avatar" id="avatar" placeholder="avatar">
+        </div>
+    </div>
 
     <div class="form-group row">
         <div class="offset-sm-2 col-sm-10">

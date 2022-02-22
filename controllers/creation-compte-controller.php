@@ -12,7 +12,8 @@ function creation_compte()
         !empty($_POST['pseudo'])
         && !empty($_POST['identifiant'])
         && !empty($_POST['password'])
-
+        && !empty($_POST['avatar'])
+        && filter_var($_POST['avatar'], FILTER_SANITIZE_URL) !== false
         && !empty($_POST['confirmer'])
         && ($_POST['password'] === $_POST['confirmer'])
 

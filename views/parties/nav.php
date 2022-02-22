@@ -30,6 +30,7 @@
                 <?php } else { ?>
                     <a class=" nav-link" href="<?= url('deconnexion') ?>">Deconnexion</a>
                     <span class=" ml-auto nav-item"><?= $_SESSION['pseudo'] ?></span>
+                    <img class="nav-item " style="width:30px " src="<?= $_SESSION['avatar'] ?>">
                 <?php  } ?>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?route=creation-compte">Créer un compte</a>
