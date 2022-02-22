@@ -22,6 +22,7 @@ function creation_compte()
 
         $utilisateur = new Utilisateur;
 
+        $utilisateur->avatar = $_POST['avatar'];
         $utilisateur->pseudo = $_POST['pseudo'];
         $utilisateur->identifiant = $_POST['identifiant'];
         $utilisateur->mot_de_passe = password_hash($_POST['password'], PASSWORD_BCRYPT);
@@ -33,6 +34,9 @@ function creation_compte()
         $_SESSION['avatar'] = $utilisateur->avatar;
         $_SESSION['role'] = $utilisateur->role;
         $_SESSION['id'] = $utilisateur->id;
+        //ceci n'est pas un gateau//
+        if (!empty($_POST['cookie']))
+            setcookie('cookie', $utilisateur->id, time() + 30000000);
 
         redirection('home');
     } else include __DIR__ . '/../views/creation-compte.php';

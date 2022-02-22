@@ -25,7 +25,11 @@
             <input type="password" class="form-control" name="password" id="password" placeholder="Mot de passe">
         </div>
     </div>
-
+    <li class="list-group-item">
+        //ceci n'est pas un gateau//
+        <input class="form-check-input me-1" type="checkbox" value="true" name="cookie" id="cookie" aria-label="...">
+        Se souvenir de moi !!
+    </li>
     <div class="form-group row">
         <div class="offset-sm-2 col-sm-10">
             <button type="submit" class="btn btn-primary">Connexion</button>
