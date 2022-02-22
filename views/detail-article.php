@@ -2,7 +2,7 @@
 
 <?php include __DIR__ . '/parties/nav.php'; ?>
 
-<!-- <h1></h1> -->
+
 
 <div class="row">
     <div class="col-4">
@@ -20,6 +20,12 @@
 
             <dt>Contenu</dt>
             <dd><?= $article->contenu ?></dd>
+
+            <?php foreach ($commentaires as $com) { ?>
+
+                <dt>Commentaires</dt>
+                <dd><?= $com->contenu ?></dd>
+            <?php } ?>
         </dl>
     </div>
     <a href="index.php?route=modifier-article&id=<?= $a->id ?>" class="btn btn-primary">Modifier</a>

@@ -71,6 +71,11 @@ switch ($route) {
         creation_compte();
         break;
 
+        // case 'commentaires':
+        //     include __DIR__ . '/controllers/commentaires-controller.php';
+        //     display_commentaire();
+        //     break;
+
     default:
         die('Erreur 404');
 }
